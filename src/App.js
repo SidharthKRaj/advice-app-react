@@ -7,9 +7,9 @@ function App() {
   
   const [advice, setState] = useState('');
 
-  // useEffect(() => {
-  //   fetchAdvice();
-  // }, [])
+  useEffect(() => {
+    fetchAdvice();
+  }, [])
 
   const fetchAdvice = () => {
     axios.get(`https://api.adviceslip.com/advice`)
